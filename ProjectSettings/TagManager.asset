@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - CashierDesk
+  - ItemStand
+  - UpgradeDesk
+  - ItemTakePlace
+  - Customer
+  - Stuff
+  - NoJoystickUI
+  - Activision
+  - Truck
+  - PowerBoostBox
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - PlayerInteractables
+  - Player
+  - NavmeshIgnore
+  - Customer
+  - Stuff
+  - PlayerBlocker
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
