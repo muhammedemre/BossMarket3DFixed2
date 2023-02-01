@@ -19,7 +19,6 @@ public class GameAnalyticsInitializer : MonoBehaviour, IGameAnalyticsATTListener
     void Start()
     {
         IphoneAnalyticsPermission();
-        //StartCoroutine(DelayerForTest());
     }
 
     void IphoneAnalyticsPermission()
@@ -31,37 +30,24 @@ public class GameAnalyticsInitializer : MonoBehaviour, IGameAnalyticsATTListener
         else
         {
             GameAnalytics.Initialize();
-            //StartCoroutine(DelayerForTest());
         }
-    }
-
-    IEnumerator DelayerForTest()
-    {
-        yield return new WaitForSeconds(5f);
-        //IphoneAnalyticsPermission();
-        print("INIT FROM DELAYER");
-        GameAnalytics.Initialize();
     }
 
     public void GameAnalyticsATTListenerNotDetermined()
     {
         GameAnalytics.Initialize();
-        //StartCoroutine(DelayerForTest());
     }
     public void GameAnalyticsATTListenerRestricted()
     {
         GameAnalytics.Initialize();
-        //StartCoroutine(DelayerForTest());
     }
     public void GameAnalyticsATTListenerDenied()
     {
         GameAnalytics.Initialize();
-        //StartCoroutine(DelayerForTest());
     }
     public void GameAnalyticsATTListenerAuthorized()
     {
         GameAnalytics.Initialize();
-        //StartCoroutine(DelayerForTest());
     }
 
 }

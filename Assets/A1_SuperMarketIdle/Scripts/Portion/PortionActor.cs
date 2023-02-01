@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using GameAnalyticsSDK;
 
 public class PortionActor : MonoBehaviour
 {
@@ -28,5 +29,6 @@ public class PortionActor : MonoBehaviour
     void TriggerTheRoomEvent()
     {
         EventsManager.instance.RoomEventsTrigger(false, relatedRoomActor.roomIndex);
+        GameAnalytics.NewProgressionEvent(GAProgressionStatus.Complete, "Room_"+ relatedRoomActor.roomIndex+" Portion");
     }
 }

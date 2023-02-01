@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using GameAnalyticsSDK;
 
 public class RoomActor : MonoBehaviour
 {
@@ -44,5 +45,6 @@ public class RoomActor : MonoBehaviour
     void TriggerTheRoomEvent()
     {
         EventsManager.instance.RoomEventsTrigger(true, roomIndex);
+        GameAnalytics.NewProgressionEvent(GAProgressionStatus.Complete, "Room_" + roomIndex);
     }
 }

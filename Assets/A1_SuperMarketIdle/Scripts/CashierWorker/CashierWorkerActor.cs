@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using GameAnalyticsSDK;
 
 public class CashierWorkerActor : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class CashierWorkerActor : MonoBehaviour
         liveDuration = _liveDuration;
         particle.Play();
         deathTime = Time.time + liveDuration;
+        GameAnalytics.NewDesignEvent("CashierActivated");
     }
 
     private void Update()

@@ -1,3 +1,4 @@
+using GameAnalyticsSDK;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -22,6 +23,7 @@ public class StuffAIOfficer : MonoBehaviour
     {
         FindTheRoomInIt();
         TakeAnItem();
+        GameAnalytics.NewDesignEvent("StaffActivated_inRoom_" + roomInIt);
     }
 
     private void Update()

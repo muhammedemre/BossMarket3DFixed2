@@ -1,3 +1,4 @@
+using GameAnalyticsSDK;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -16,6 +17,7 @@ public class ItemStandActor : MonoBehaviour
         RegisterToItemStandsList();
         LetRoomDataIamActivated();
         IfCreatedFromDataLoad();
+        GameAnalytics.NewDesignEvent("ItemStandActivated_inRoom_" + belongingRoom);
     }
     void RegisterToItemStandsList()
     {

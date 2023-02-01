@@ -22,7 +22,7 @@ namespace DefaultNamespace
             }
 
             FB.Init(FBInitCallback);
-            GameAnalytics.Initialize();
+            //GameAnalytics.Initialize();
         }
 
         private void FBInitCallback()

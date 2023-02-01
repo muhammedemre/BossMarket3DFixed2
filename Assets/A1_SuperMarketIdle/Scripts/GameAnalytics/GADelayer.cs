@@ -15,7 +15,7 @@ public class GADelayer : MonoBehaviour
     {
         yield return new WaitForSeconds(15f);
         //IphoneAnalyticsPermission();
-        print("INIT FROM DELAYER");
-        GameAnalytics.Initialize();
+        //print("INIT FROM DELAYER");
+        //GameAnalytics.Initialize();
     }
 }

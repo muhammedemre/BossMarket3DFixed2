@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using Sirenix.OdinInspector;
+using GameAnalyticsSDK;
 
 public class AdsRewardPopUpActor : MonoBehaviour
 {
@@ -22,11 +23,13 @@ public class AdsRewardPopUpActor : MonoBehaviour
         {
             freeCoinsPopUp.SetActive(false);
             fillRoomPopUp.SetActive(true);
+            GameAnalytics.NewDesignEvent("PopUpRewardAd_FillRoom");
         }
         else if (state == AdsRewardPopUpState.FreeCoins)
         {
             fillRoomPopUp.SetActive(false);
             freeCoinsPopUp.SetActive(true);
+            GameAnalytics.NewDesignEvent("PopUpRewardAd_FreeCoins");
         }
     }
 }
